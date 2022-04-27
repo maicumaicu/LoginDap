@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020099280203",
+    "project_id": "appdap-8e1a2",
+    "storage_bucket": "appdap-8e1a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020099280203:android:8937aa32151c370a443cce",
+        "android_client_info": {
+          "package_name": "com.agustin.appdap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020099280203-5qhh1djb1n40r7vgtv4sunuov98hb3mo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCUWYWD2tZRj7uWcZ5I18TtuaBX3wjdEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020099280203-5qhh1djb1n40r7vgtv4sunuov98hb3mo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

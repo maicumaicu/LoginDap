@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph.xml"
+    app:startDestination="@id/fragmentLogIn">
+
+    <fragment
+        android:id="@+id/fragmentHub"
+        android:name="com.agustin.appdap.fragments.FragmentHub"
+        android:label="fragment_hub_fragment"
+        tools:layout="@layout/fragment_hub_fragment" >
+        <argument android:name="userInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogIn"
+        android:name="com.agustin.appdap.fragments.FragmentLogIn"
+        android:label="fragment_log_in_fragment"
+        tools:layout="@layout/fragment_log_in_fragment" >
+        <action
+            android:id="@+id/action_fragmentLogIn_to_fragmentHub"
+            app:destination="@id/fragmentHub" />
+    </fragment>
+</navigation>
