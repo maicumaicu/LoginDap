@@ -29,8 +29,8 @@ class FragmentHub : Fragment() {
         v =  inflater.inflate(R.layout.fragment_hub_fragment, container, false)
         TxtMain = v.findViewById(R.id.MainTxt)
         TxtEmail = v.findViewById(R.id.EmailTxt)
-        val Email = FragmentHubArgs.fromBundle(requireArguments()).userInfo
-        TxtEmail.text = Email
+        val userInfo = FragmentHubArgs.fromBundle(requireArguments()).userInfo
+        TxtEmail.text = userInfo.Email
         return v
     }
 

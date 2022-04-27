@@ -10,7 +10,8 @@
         android:name="com.agustin.appdap.fragments.FragmentHub"
         android:label="fragment_hub_fragment"
         tools:layout="@layout/fragment_hub_fragment" >
-        <argument android:name="userInfo" />
+        <argument android:name="userInfo"
+            app:argType="com.agustin.appdap.clases.Usuario" />
     </fragment>
     <fragment
         android:id="@+id/fragmentLogIn"

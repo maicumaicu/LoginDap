@@ -67,10 +67,14 @@ class FragmentLogIn : Fragment() {
             auth.signInWithEmailAndPassword(Email, Password).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     var user = auth.currentUser
-                    var action = FragmentLogInDirections.actionFragmentLogInToFragmentHub(
-                        user?.email ?: ""
-                    )
-                    v.findNavController().navigate(action)
+                    var email = user?.email ?: ""
+                    var uid = user?.uid ?: ""
+                    if (email.isNotEmpty() && uid.isNotEmpty()){
+                        var action = FragmentLogInDirections.actionFragmentLogInToFragmentHub(
+                            Usuario(email, uid)
+                        )
+                        v.findNavController().navigate(action)
+                    }
                 } else {
                     Snackbar.make(v, "Usuario Incorrecto", Snackbar.LENGTH_LONG).show()
                 }
